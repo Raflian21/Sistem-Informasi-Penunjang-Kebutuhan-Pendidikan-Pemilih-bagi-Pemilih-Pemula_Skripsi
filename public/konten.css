@@ -1,0 +1,280 @@
+body {
+  background-color: #24262b;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif; /* Applied font family globally */
+}
+
+header, .footer {
+  flex-shrink: 0;
+}
+
+.main-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  padding: 20px;
+  color: #fff;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.sidebar h3 {
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.sidebar input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: none;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  font-size: 16px;
+  background-color: #4A4A4A;
+  color: #fff;
+  text-align: center;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+}
+
+.sidebar ul li {
+  margin: 10px 0;
+  width: 100%;
+}
+
+.sidebar ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 5px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+  background-color: #4A4A4A;
+}
+
+.sidebar ul li a:hover {
+  background-color: #C0A080;
+  color: #333;
+}
+
+.content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center content horizontally */
+  justify-content: center; /* Center content vertically */
+  padding: 20px;
+  margin-top: 5%;
+}
+
+.container {
+  background-image: url('img/back3.jpg');
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-color: #EEEDEB;
+  width: 100%; /* Full width for responsiveness */
+  max-width: 850px; /* Adjusted max-width for larger screens */
+  height: auto; /* Adjusted height for responsiveness */
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.container video {
+  width: 90%;
+  height: auto;
+  margin-left: 40px;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.navigation-buttons .btn1,
+.navigation-buttons .btn2 {
+  background-color: #C0A080;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+.navigation-buttons .btn1:hover,
+.navigation-buttons .btn2:hover {
+  background-color: #a08a60;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+/* Footer */
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer {
+  background-color: #0F0F0F;
+  padding: 50px 0;
+  bottom: 0;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.footer-col .social-links img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.sosmed {
+  margin-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .main-content {
+    flex-direction: column;
+    align-items: center;
+}
+.sidebar {
+    width: 100%; /* Sidebar full width on mobile */
+    max-width: 100%; /* Ensure it takes full width if needed */
+    margin-bottom: 20px; /* Add margin bottom for spacing */
+}
+.content {
+    width: 100%;
+}
+.container {
+    width: 100%;
+    max-width: 100%;
+}
+.container video {
+    width: 90%; /* Adjust video width as needed */
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.navigation-buttons {
+    margin-bottom: 20px;
+}
+.sidebar h3,
+.sidebar input[type="text"],
+.sidebar ul {
+    width: 100%;
+}
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+      width: 100%;
+  }
+  .kolom h1 {
+      font-size: 30px;
+      line-height: 40px;
+  }
+}

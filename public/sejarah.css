@@ -1,0 +1,298 @@
+body {
+  background-color: #222325e2;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sejarah {
+  margin-top: 5%;
+  flex: 1;
+  padding-bottom: 5%;
+}
+
+.sejarah-slide {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background-image: url('img/batik2.png');
+  background-size: cover;
+  background-position: center;
+  width: 80%;
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+  border-radius: 30px;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.5);
+}
+
+.judul {
+  margin-left: 10px;
+  margin-top: 8px;
+}
+
+.judul h1 {
+  color: #fff;
+  font-size: 35px;
+  font-family: courier;
+  font-weight: 950;
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-top: 20px;
+}
+
+.gambar {
+  flex: 1;
+  text-align: center;
+  font-weight: bold;
+  color: #ff8e04;
+  font-size: 20px;
+  max-width: 40%;
+  margin-top: 60px;
+}
+
+.gambar a {
+  color: #fff;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.gambar img {
+  margin-top: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+}
+
+.halfimg {
+  flex: 2;
+  max-width: 65%;
+  padding-left: 20px;
+  box-sizing: border-box;
+}
+
+.card {
+  width: 100%;
+  max-width: 580px;
+  height: 350px;
+  position: relative;
+  margin-top: 8%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.card .form-field {
+  display: grid;
+  grid-template-columns: 250px max-content 1fr;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 10px;
+}
+
+.card .form-field .label,
+.card .form-field .isi {
+  color: #fff;
+  font-size: 22px;
+  text-align: left;
+  margin-top: 10px;
+  white-space: nowrap;
+}
+
+.navigation-buttons {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.navigation-buttons button {
+  background-color: #C0A080;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  font-weight: bold;
+  margin: 5px;
+}
+
+.navigation-buttons button:hover {
+  background-color: #a08a60;
+}
+
+/* Footer */
+.footer {
+  background-color: #0F0F0F;
+  padding: 20px 0;
+  margin-top: auto;
+  width: 100%;
+}
+
+.footer .container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.footer .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer-col {
+  width: 25%;
+  padding: 0 15px;
+  text-align: center;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #ffffff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col h4::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -10px;
+  background-color: #e91e63;
+  height: 2px;
+  box-sizing: border-box;
+  width: 50px;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  font-size: 16px;
+  text-transform: capitalize;
+  color: #bbbbbb;
+  text-decoration: none;
+  font-weight: 300;
+  display: block;
+  transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+  color: #ffffff;
+  padding-left: 8px;
+}
+
+.footer-col .social-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.footer-col .social-links a {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  margin: 0 10px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.footer-col .social-links img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a:hover img {
+  transform: scale(1.1);
+}
+
+.sosmed {
+  margin-left: 15px;
+}
+
+/* Responsive */
+@media (max-width: 767px) {
+  .sejarah-slide {
+    padding: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .gambar {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .halfimg {
+    max-width: 100%;
+    padding-left: 0;
+  }
+
+  .card {
+    max-width: 100%;
+    margin-top: 30px;
+  }
+
+  .navigation-buttons {
+    margin-top: 20px;
+  }
+
+  .footer-col {
+    width: 50%;
+  }
+
+  .card {
+    font-size: 13px; /* Decrease font size for mobile */
+  }
+
+  .card .form-field {
+    grid-template-columns: minmax(120px, 1fr) minmax(60px, max-content) 1fr; /* Adjust grid columns for mobile alignment */
+  }
+
+  .card .form-field .label,
+  .card .form-field .isi {
+    font-size: 12px; /* Adjust label and value font size for mobile */
+  }
+
+  .gambar a {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+
+  .judul h1 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+
+.info a:hover {
+  color: blue;
+}

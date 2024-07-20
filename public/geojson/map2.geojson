@@ -1,0 +1,5 @@
+{"type":"FeatureCollection","features":[{"type":"Feature","properties":{ "TPS":"001", "Alamat":"Balai RW 10", "Total Pemilih":"271"},"geometry":{"coordinates":[112.524591,-7.8944312],"type":"Point"}},
+{"type":"Feature","properties":{"TPS":"002", "Alamat":"TPQ Radatul Amin", "Total Pemilih":"269"},"geometry":{"coordinates":[112.524905,-7.905687],"type":"Point"}},
+{"type":"Feature","properties":{"TPS":"003", "Alamat":"TK Kartini", "Total Pemilih":"285"},"geometry":{"coordinates":[112.526915,-7.905685],"type":"Point"}},
+{"type":"Feature","properties":{"TPS":"004", "Alamat":"Rumah Bapak Suprapto", "Total Pemilih":"290"},"geometry":{"coordinates":[112.52677,-7.904015],"type":"Point"}}
+]}

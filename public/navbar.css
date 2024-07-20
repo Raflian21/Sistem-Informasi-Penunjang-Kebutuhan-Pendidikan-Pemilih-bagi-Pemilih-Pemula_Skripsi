@@ -1,0 +1,202 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.logo a {
+    font-size: 50px;
+    font-weight: 800;
+    font-family: courier;
+    color: #EEEDDE;
+}
+.menu {
+    display: flex;
+}
+.menu ul {
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.menu ul li {
+    margin-left: 20px;
+}
+.menu ul li a {
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    text-decoration: underline;
+}
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+.menu-toggle span {
+    height: 3px;
+    width: 25px;
+    background: white;
+    margin: 4px;
+    border-radius: 5px;
+}
+nav {
+    width: 100%;
+    padding: 20px 0;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #620b25;
+    z-index: 1;
+    font-family: 'Open Sans', sans-serif;
+}
+#submit-btn {
+    background: black;
+    border-radius: 21px;
+    border: none;
+    box-shadow: 0px 1px 8px #ffffff;
+    cursor: pointer;
+    color: white;
+    font-family: "Raleway SemiBold", sans-serif;
+    height: 42.3px;
+    margin: 0 auto;
+    transition: 0.25s;
+    width: 153px;
+}
+#submit-btn:hover {
+    box-shadow: 0px 1px 18px #8FBDD3;
+    background: #C0A080;
+    text-decoration: none;
+}
+a.tbl-satu {
+    background: #2C3333;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 15px 20px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+a.tbl-satu:hover {
+    background: #C0A080;
+    text-decoration: none;
+}
+.footer {
+    background-color: #0F0F0F;
+    padding: 50px 0;
+    margin-bottom: 0;
+}
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+.footer-col h4 {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+}
+.footer-col h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    background-color: #e91e63;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+}
+.footer-col ul li:not(:last-child) {
+    margin-bottom: 10px;
+}
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+}
+.footer-col ul li a:hover {
+    color: #ffffff;
+    padding-left: 8px;
+}
+.footer-col .social-links a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+}
+.footer-col .social-links a img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+.footer-col .social-links a:hover {
+    color: #24262b;
+    background-color: #ffffff;
+}
+
+/* Responsive Design */
+@media (max-width: 1100px) {
+    .wrapper {
+        padding: 0 20px;
+        position: relative; /* Pastikan memiliki position relative */
+        z-index: 2; /* Tambahkan z-index yang lebih tinggi dari main content */
+    }
+    .menu ul {
+        flex-direction: column;
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #620b25;
+        width: 30%;
+        display: none;
+        text-align: center;
+        z-index: 3; /* Pastikan z-index lebih tinggi untuk menu dropdown */
+    }
+    .menu ul li {
+        margin: 10px 0;
+    }
+    .menu.active ul {
+        display: flex;
+    }
+    .menu-toggle {
+        display: flex;
+    }
+    .menu ul li a {
+        padding: 10px 20px;
+    }
+}
+@media (max-width: 767px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+@media (max-width: 574px) {
+    .footer-col {
+        width: 100%;
+    }
+}
